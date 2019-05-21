@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Homepage</title>
+    <style type="text/css">
+        /*tag selector*/
+        
+        body {
+            font-size: 16 px;
+            font-family: "Consolas";
+        }
+        
+        h3 {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+        /*class selector*/
+        
+        div.content {
+            width: 50%;
+            padding: 10px;
+            border: 1px dashed #888888;
+        }
+        
+        .content {
+            padding: 10px;
+            border: 1px dashed #888888;
+        }
+        /*id selector*/
+        
+        #btn {
+            border: 1px solid #888888;
+            background-color: #ffffff;
+            padding: 5px;
+        }
+        /* pseudo selector*/
+        /* hover */
+        
+        #btn:hover {
+            background-color: #888888;
+        }
+        /* focus test: when input be clicked, turn the border into red */
+        
+        input:focus {
+            border: 2px solid #ff0000;
+        }
+        /* Descendant Selector*/
+        
+        .edu a {
+            color: #0000ff;
+        }
+        
+        .demo a {
+            color: #008800;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yaw-An Project0</h1>
+    <h3>Self-Introduction</h3>
+    <div class="content">
+        I'm Yaw-An.
+    </div>
+    <h3>Education</h3>
+    <ul class="edu">
+        <li>
+            <a href="education.html">National Taiwan University (NTU)</a>
+        </li>
+        <li>
+            <a href="https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web/course/?fbclid=IwAR3HCxICUqUTXWKP7WeDvR7pDp6MqWrq6TU8gF927kX_krOUiQal0lQcuKs">CS50's Web Programming with Python and JavaScript</a
+        >
+        </li>
+    </ul>
+    <h3>Experience</h3>
+    <ul class="demo">
+      <li>Pegatron as a Software/Firmware Engineer</a></li>
+    </ul>
+    <h3>My pages</h3>
+    <ul class="demo">
+        <li><a href="https://github.com/Yawan">Github Account</a></li>
+        <li><a href="examples.html">CS50 Course examples</a></li>
+    </ul>
+    <h3>Contact</h3>
+    <span class="content">
+      Message <input type="text" /> <button id="btn">Send</button>
+    </span>
+</body>
+
+</html>
